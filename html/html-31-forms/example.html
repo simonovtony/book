@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <form>
+        First name:<br>
+        <input type="text" name="firstname"><br>
+        Last name:<br>
+        <input type="text" name="lastname">
+    </form>
+    <br><br>
+
+    <form>
+        <input type="radio" name="gender" value="male" checked> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other
+    </form>
+
+    <br><br>
+
+    <form action="action_page.php"
+        method="get"> <!-- method="post" -->
+        First name:<br>
+        <input type="text" name="firstname" value="Mickey"><br>
+        Last name:<br>
+        <input type="text" name="lastname" value="Mouse"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <br><br>
+
+    <form action="action_page.php">
+        First name:<br>
+        <input type="text" value="Mickey"><br>
+        Last name:<br>
+        <input type="text" name="lastname" value="Mouse"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <br><br>
+
+    <form action="action_page.php">
+        <fieldset>
+            <legend>Personal inforamtion:</legend>
+            First name:<br>
+            <input type="text" name="firstname" value="Mickey"><br>
+            Last name:<br>
+            <input type="text" name="lastname" value="Mouse"><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <br><br>
+    <form action="action_page.php"
+          method="post"
+          target="_blank"
+          accept-charset="utf-8"
+          enctype="application/x-www-form-urlencoded"
+          autocomplete="off"
+          novalidate>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

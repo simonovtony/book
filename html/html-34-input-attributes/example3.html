@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Input Attributes</title>
+</head>
+<body>
+    <form action="action_page.php">
+        First name: <input type="text" name="fname" autofocus><br>
+        Last name: <input type="text" name="lname"><br>
+        <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
+    </form>
+
+    <hr>
+
+    <form action="action_page.php">
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+        <input type="submit">
+    </form>
+
+    <hr>
+
+    <form action="action_page.php">
+
+        Enter a date before 1980-01-01:
+        <input type="date" name="bday" max="1979-12-31"><br>
+
+        Enter a date after 2000-01-01:
+        <input type="date" name="bday" min="2000-01-02"><br>
+
+        Quantity (between 1 and 5):
+        <input type="number" name="quantity" min="1" max="5"><br>
+
+        <input type="submit">
+
+    </form>
+
+    <hr>
+
+    <form action="action_page.php" enctype="multipart/form-data" method="post">
+        Select images: <input type="file" name="img" multiple>
+        <input type="submit">
+    </form>
+
+    <hr>
+
+    <form action="action_page.php">
+        Country code: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+        <input type="submit">
+    </form>
+
+    <hr>
+
+    <form action="action_page.php">
+        <input type="text" name="fname" placeholder="First name"><br>
+        <input type="text" name="lname" placeholder="Last name"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <form action="action_page.php">
+        Username: <input type="text" name="username" required>
+        <input type="submit">
+    </form>
+
+    <hr>
+
+    <form action="action_page.php">
+        <input type="number" name="points" step="3">
+        <input type="submit">
+    </form>
+</body>
+</html>

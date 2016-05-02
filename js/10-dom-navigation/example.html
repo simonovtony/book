@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <h1 id="intro">My First Page</h1>
+        
+        <p id="demo">Hello World!</p>
+        
+        <script>
+            var myText = document.getElementById("intro").childNodes[0].nodeValue;
+            document.getElementById("demo").innerHTML = myText;
+            
+            /*
+             * myText.parentNode : HTMLElement or null;
+             * myText.childNodes : HTMLElement[nodenumber] or null;
+             * myText.firstChild : HTMLElement or null;
+             * myText.lastChild : HTMLElement or null;
+             * myText.nextSibling : HTML Element or null (myText.nextSibling == h1 intro)
+             * myText.previousSibling : HTML Element or null (myText.nextSibling == script) 
+             * 
+             * document.body - body
+             * document.documentElement - html
+             * 
+             * myText.firstChild.nodeName;
+             * myText.firstChild.nodeValue;
+             * myText.firstChild.nodeType;
+             * 
+             * nodeType 
+             * 1 = Element
+             * 2 = Attribute
+             * 3 = Text
+             * 8 = Comment
+             * 9 = Document
+             */
+        </script>
+        
+    </body>
+</html>
