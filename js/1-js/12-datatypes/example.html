@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <p>When adding a number and a string, JavaScript will treat the number as a
+            string.</p>
+        
+        <p id="demo"></p>
+        
+        <script>
+            var x = 16 + "Volvo";
+            document.getElementById("demo").innerHTML = x;
+        </script>
+        
+        <p>When adding a number and a string, JavaScript will treat the number as a
+            string.</p>
+        
+        <p id="demo2"></p>
+        
+        <script>
+            var x = "Volvo" + 16;
+            document.getElementById("demo2").innerHTML = x;
+        </script>
+        
+        <p>Left arithmetic side</p>
+        
+        <p id="demo3"></p>
+        
+        <script>
+            var x = 16 + 4 + "Volvo";
+            document.getElementById("demo3").innerHTML = x;
+        </script>
+        
+        <p>Right arithmetic side</p>
+        
+        <p id="demo4"></p>
+        
+        <script>
+            var x = "Volvo" + 16 + 4;
+            document.getElementById("demo4").innerHTML = x;
+        </script>
+        
+    </body>
+</html>
