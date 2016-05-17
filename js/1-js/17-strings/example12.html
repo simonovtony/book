@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <p>Never create strings as objects.</p>
+        <p>JavaScript objects cannot be compared.</p>
+        
+        <p id="demo"></p>
+        
+        <script>
+            var x = new String("John");
+            var y = new String("John");
+            
+            document.getElementById("demo").innerHTML = (x == y);
+        </script>
+        
+    </body>
+</html>
