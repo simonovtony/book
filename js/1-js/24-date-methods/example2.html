@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <p>The setFullYear() method sets a date object to a special date.</p>
+        
+        <p>Remember that JavaScript counts months from 0 to 11. Month 10 is November.</p>
+        
+        <p id="demo"></p>
+        
+        <script>
+            var d = new Date();
+            d.setFullYear(2020, 0, 14);
+            document.getElementById("demo").innerHTML = d;
+        </script>
+       
+        <p>The setDate() method sets the date of a month.</p>
+        
+        <p id="demo2"></p>
+        
+        <script>
+            var d = new Date();
+            d.setDate(15);
+            document.getElementById("demo2").innerHTML = d;
+        </script>
+        
+        <p>The setDate() method can be used to add days to a date.</p>
+        
+        <p id="demo3"></p>
+        
+        <script>
+            var d = new Date();
+            d.setDate(d.getDate() + 50);
+            document.getElementById("demo3").innerHTML = d;
+        </script>
+        
+        <p>Date.parse() returns the number of milliseconds between the date and January 1, 1970:</p>
+        
+        <p id="demo4"></p>
+        
+        <script>
+            var msec = Date.parse("March 21, 2012");
+            document.getElementById("demo4").innerHTML = msec;
+        </script>
+        
+        <p>Date.parse(string) returns milliseconds.</p>
+        <p>You can use the return value to convert the string to a date object:</p>
+        
+        <p id="demo5"></p>
+        
+        <script>
+            var msec = Date.parse("March 21, 2012");
+            var d = new Date(msec);
+            document.getElementById("demo5").innerHTML = d;
+        </script>
+        
+    </body>
+</html>

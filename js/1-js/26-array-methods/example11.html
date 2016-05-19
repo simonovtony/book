@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <p>Deleting elements leaves undefined holes in an array.</p>
+        
+        <button onclick="myFunction()">Try it</button>
+        
+        <p id="demo"></p>
+        
+        <script>
+            var fruits = ["Banana", "Orange", "Apple", "Mango"];
+            document.getElementById("demo").innerHTML = fruits;
+            
+            function myFunction() {
+                delete fruits[0];
+                document.getElementById("demo").innerHTML = fruits[0];
+            }
+        </script>
+        
+    </body>
+</html>
