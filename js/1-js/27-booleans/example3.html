@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <p id="demo"></p>
+        
+        <script>
+            var b1 = Boolean(0);
+            var b2 = Boolean(-0);
+            var b3 = Boolean("");
+            var x;
+            var b4 = Boolean(x);
+            var x = null;
+            var b5 = Boolean(x);
+            var b6 = Boolean(false);
+            var x = 10 / "H";
+            var b7 = Boolean(x);
+            
+            document.getElementById("demo").innerHTML = 
+                    "0 is " + b1 + "<br>" + 
+                    "-0 is " + b2 + "<br>" + 
+                    "\"\" is " + b3 + "<br>" + 
+                    "var x; is " + b4 + "<br>" + 
+                    "var x = null; is " + b5 + "<br>" + 
+                    "false is " + b6 + "<br>" + 
+                    "NaN is " + b7;
+        </script>
+        
+    </body>
+</html>
