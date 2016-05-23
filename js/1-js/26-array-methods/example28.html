@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <p>JavaScript automatically converts an array to a string when a primitive 
+        value is expected.</p>
+        
+        <p id="demo"></p>
+        
+        <script>
+            var fruits = ["Banana", "Orange", "Apple", "Mango"];
+            document.getElementById("demo").innerHTML = 
+                    fruits + "<br>" +
+                    fruits.valueOf() + "<br>" +
+                    fruits.toString();
+        </script>
+        
+    </body>
+</html>
