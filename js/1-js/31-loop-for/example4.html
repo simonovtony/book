@@ -5,12 +5,15 @@
         <p id="demo"></p>
         
         <script>
-            var cars = ["BMW", "Volvo", "Saab", "Ford"];
+            var cars = ["BWM", "Volvo", "Saab", "Ford"];
+            var i = 2;
+            var len = cars.length;
             var text = "";
-            var i;
-            for(i = 0; i < cars.length; i++) {
+            
+            for(; i < len; i++) {
                 text += cars[i] + "<br>";
             }
+            
             document.getElementById("demo").innerHTML = text;
         </script>
         

@@ -6,11 +6,16 @@
         
         <script>
             var cars = ["BMW", "Volvo", "Saab", "Ford"];
+            
+            var i = 0;
+            var len = cars.length;
             var text = "";
-            var i;
-            for(i = 0; i < cars.length; i++) {
+            
+            for(; i < len;) {
                 text += cars[i] + "<br>";
+                i++;
             }
+            
             document.getElementById("demo").innerHTML = text;
         </script>
         
