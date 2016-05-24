@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Replace "microsoft" with "W3Schools" in the paragraph below:</p>
+        <button onclick="myFunction()">Try it</button>
+        <p id="demo">Please visit Microsoft!</p>
+        <script>
+            function myFunction() {
+                var str = document.getElementById("demo").innerHTML;
+                var txt = str.replace(/microsoft/i, "W3Schools");
+                document.getElementById("demo").innerHTML = txt;
+            }
+        </script>
+        
+        <p>Replace "microsoft" with "W3Schools" in the paragraph below:</p>
+        <button onclick="myFunction2()">Try it</button>
+        <p id="demo2">Please visit Microsoft!</p>
+        <script>
+            function myFunction2() {
+                var str = document.getElementById("demo2").innerHTML;
+                var txt = str.replace("Microsoft", "W3Schools");
+                document.getElementById("demo2").innerHTML = txt;
+            }
+        </script>
+    </body>
+</html>

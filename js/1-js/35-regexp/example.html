@@ -1,6 +1,28 @@
 <!DOCTYPE html>
 <html>
     <body>
+        <p>Search a string for "w3schools", and display the position of
+            the match:</p>
+        <button onclick="myFunction()">Try it</button>
+        <p id="demo"></p>
+        <script>
+            function myFunction() {
+                var str = "Visit W3Schools!";
+                var n = str.search(/w3schools/i);
+                document.getElementById("demo").innerHTML = n;
+            }
+        </script>
         
+        <p>Search a string for "W3Schools", and display the position of 
+            the match:</p>
+        <button onclick="myFunction2()">Try it</button>
+        <p id="demo2"></p>
+        <script>
+            function myFunctuon2() {
+                var str = "Visit W3Schools!";
+                var n = str.search("W3Schools");
+                document.getElementById("demo").innerHTML = n;
+            }
+        </script>
     </body>
 </html>
