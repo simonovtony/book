@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <p>The typeof operator returns the type of a variable or expression.</p>
+        
+        <button onclick="myFunction()">Try it</button>
+        
+        <p id="demo"></p>
+        
+        <script>
+            function myFunction() {
+                var y = "5";
+                var x = + y;
+                document.getElementById("demo").innerHTML = 
+                        typeof y + "<br>" + typeof x;
+            }
+        </script>
+        
+        <p>The typeof operator returns the type of a variable or expression.</p>
+        
+        <button onclick="myFunction2()">Try it</button>
+        
+        <p id="demo2"></p>
+        
+        <script>
+            function myFunction2() {
+                var y = "John";
+                var x = + y;
+                document.getElementById("demo2").innerHTML = 
+                        typeof x + "<br>" + x;
+            }
+        </script>
+        
+    </body>
+</html>

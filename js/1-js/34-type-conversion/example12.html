@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <p>Automatic String Conversion.</p>
+        
+        <p id="demo"></p>
+        
+        <script>
+            document.getElementById("demo").innerHTML = {name:"Fjohn"} + "<br>";
+            document.getElementById("demo").innerHTML += [1,2,3,4] + "<br>";
+            document.getElementById("demo").innerHTML += new Date() + "<br>";
+            
+            document.getElementById("demo").innerHTML += 123 + "<br>";
+            document.getElementById("demo").innerHTML += true + "<br>";
+            document.getElementById("demo").innerHTML += false + "<br>";
+        </script>
+        
+    </body>
+</html>

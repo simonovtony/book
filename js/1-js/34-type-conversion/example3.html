@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <p>This "home mate" function, when used on an array, returns true.</p>
+        
+        <p id="demo"></p>
+        
+        <script>
+            var fruits = ["Banana", "Orange", "Apple", "Mango"];
+            document.getElementById("demo").innerHTML = isArray(fruits);
+            
+            function isArray(x) {
+                return x.constructor.toString().indexOf("Array") > -1;
+            }
+        </script>
+        
+        <p>This "home mate" function, when used on an date, retunrs true.</p>
+        
+        <p id="demo2"></p>
+        
+        <script>
+            var myDate = new Date();
+            document.getElementById("demo2").innerHTML = isDate(myDate);
+            
+            function isDate(myDate) {
+                return myDate.constructor.toString().indexOf("Date") > -1;
+            }
+        </script>
+        
+    </body>
+</html>

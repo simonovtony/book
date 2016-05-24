@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <p>The String() method can convert a number to a string.</p>
+        
+        <p id="demo"></p>
+        
+        <script>
+            var x = 123;
+            document.getElementById("demo").innerHTML = 
+                    String(x) + "<br>" + 
+                    String(123) + "<br>" + 
+                    String(100 + 23);
+        </script>
+        
+        <p>The toString() method can covert a number to a string.</p>
+        
+        <p id="demo2"></p>
+        
+        <script>
+            var x = 123;
+            document.getElementById("demo").innerHTML = 
+                    x.toString() + "<br>" +
+                    (123).toString() + "<br>" +
+                    (100 + 23).toString();
+            
+            /*
+            toExponential()
+            toFixed()
+            toPrecision()
+            */
+        </script>
+        
+    </body>
+</html>
