@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <p>Remove the comment (at the beggining of the lines) to test each case:</p>
+        
+        <p id="demo"></p>
+        
+        <script>
+            var x = 5;
+            x = 5 + 7;      // 12
+            x = 5 + "7";    // 57
+            x = "5" + 7;    // 57
+            x = 5 - 7;      // -2
+            x = "5" - 7;    // -2
+            x = 5 - "x";    // NaN
+            
+            document.getElementById("demo").innerHTML = x.valueOf() + " " + typeof x;
+        </script>
+        
+    </body>
+</html>
