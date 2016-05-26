@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <h1>"use strict" errors</h1>
+        
+        <script>
+            /*
+            "use strict";
+            x = 3.14;
+            */
+           
+            /*
+            "use strict";
+            x = {
+                p1: 10,
+                p2: 20
+            };
+            */
+           
+            /*
+            "use strict";
+            var x = 3.14;
+            delete x;
+            */
+          
+            /*
+            "use strict";
+            function x(p1, p2) {};
+            delete x;
+            */
+            
+            /*
+            "use strict";
+            function x(p1, p1) {};
+            */
+            
+            /*
+            "use strict";
+            var x = 010;
+            */
+           
+            /*
+            "use strict";
+            var obj = {};
+            Object.defineProperty(obj, "x", {
+                value: 0,
+                writable: false
+            });
+            obj.x = 3.14;
+            */
+            
+            /*
+            "use strict";
+            var obj = {
+                get x() {
+                    return 0;
+                }
+            };
+            obj.x = 3.14;
+            */
+           
+            /*
+            "use strict";
+            delete Object.prototype;
+            */
+           
+            /*
+            "use strict";
+            var eval = 3.14;
+            */
+           
+            /*
+            "use strict";
+            var arguments = 3.14;
+            */
+            
+            /*
+            "use strict";
+            with (Math) {
+                x = cos(2);
+            };
+            */
+            
+            /*
+            "use strict";
+            eval("var x = 2");
+            alert(x);
+            */
+           
+            /*
+            "use strict";
+            var public = 1500;
+            */
+        </script>
+        
+    </body>
+</html>
