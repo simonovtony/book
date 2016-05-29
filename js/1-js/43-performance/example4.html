@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <p>Block start.</p>
+        
+        <script defer src="myScript.js"></script>
+        <!-- or -->
+        <script>
+            window.onload = downScripts;
+            
+            function downScripts() {
+                var element = document.createElement("script");
+                element.src = "myScript.js";
+                document.body.appendChild(element);
+            }
+        </script>
+        
+        <p>Block end.</p>
+        
+        <p>Don't use "with"</p>
+        
+    </body>
+</html>

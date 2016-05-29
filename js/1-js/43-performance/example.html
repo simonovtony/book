@@ -2,7 +2,19 @@
 <html>
     <body>
         
+        <h1>Reduce Activity in Loops</h1>
         
+        <p id="demo"></p>
+        
+        <script>
+            var arr = [1, 2, 3, 4, 5];
+            var l = arr.length;
+            var result = "";
+            for(var i = 0; i < l; i++) {
+                result += arr[i] + ' ';
+            }
+            document.getElementById('demo').innerHTML = result;
+        </script>
         
     </body>
 </html>
