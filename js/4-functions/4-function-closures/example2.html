@@ -2,15 +2,15 @@
 <html>
     <body>
         
-        <p>A function can access variables defined inside the function:</p>
+        <p>A function can access variables defined outside the function:</p>
         
         <button type="button" onclick="myFunction()">Click Me!</button>
         
         <p id="demo"></p>
         
         <script>
+            var a = 4;
             function myFunction() {
-                var a = 4;
                 document.getElementById("demo").innerHTML = a * a;
             }
         </script>
