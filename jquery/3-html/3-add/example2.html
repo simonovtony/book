@@ -3,17 +3,15 @@
     <head>
         <script src="../../jquery.min.js"></script>
         <script>
-            
             $(document).ready(function() {
                 $("#btn1").click(function() {
-                    $("p").append(" <b>Append text</b>.");
+                    $("p").prepend("<b>Prepended text</b>. ");
                 });
                 
                 $("#btn2").click(function() {
-                    $("ol").append("<li>Append item</li>");
+                    $("ol").prepend("<li>Prepended item</li>");
                 });
             });
-            
         </script>
     </head>
     <body>
@@ -27,8 +25,8 @@
             <li>List item 3</li>
         </ol>
         
-        <button id="btn1">Append text</button>
-        <button id="btn2">Append list items</button>
+        <button id="btn1">Prepend text</button>
+        <button id="btn2">Prepend list item</button>
         
     </body>
 </html>
