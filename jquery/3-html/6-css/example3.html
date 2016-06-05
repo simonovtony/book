@@ -5,7 +5,10 @@
         <script>
             $(document).ready(function() {
                 $("button").click(function() {
-                    alert("Background color = " + $("p").css("background-color"));
+                    $("p").css({
+                        "background-color": "yellow",
+                        "font-size": "200%"
+                    });
                 });
             });
         </script>
@@ -18,7 +21,9 @@
         <p style="background-color: #00ff00">This is a paragraph.</p>
         <p style="background-color: #0000ff">This is a paragraph.</p>
         
-        <button>Return background-color of p</button>
+        <p>This is a paragraph.</p>
+        
+        <button>Set multiple styles for p</button>
         
     </body>
 </html>
