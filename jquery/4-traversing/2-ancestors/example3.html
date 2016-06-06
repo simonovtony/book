@@ -4,7 +4,7 @@
         <script src="../../jquery.min.js"></script>
         <script>
             $(document).ready(function() {
-                $("span").parent().css({
+                $("span").parents("ul").css({
                     "color": "red",
                     "border": "2px solid red"
                 });
@@ -20,25 +20,17 @@
             }
         </style>
     </head>
-    <body>
-
-        <div class="ancestors">
-            <div style="width:500px;">
-                div (great-grandparent)
-                <ul>
-                    ul (grandparent)
-                    <li>
-                        li (direct parent)
-                        <span>span</span>
-                    </li>
-                </ul>
-            </div>
-
-            <div style="width:500px;">
-                div (grandparent)
-                <p>p (direct parent) <span>span</span></p>
-            </div>
+    <body class="ancestors">
+        body (great-great-grandparent)
+        <div style="width:500px">
+            div (great-grandparent)
+            <ul>
+                ul (grandparent)
+                <li>
+                    li (direct parent)
+                    <span>span</span>
+                </li>
+            </ul>
         </div>
-
     </body>
 </html>
