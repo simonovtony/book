@@ -13,7 +13,7 @@
         <script src="../../jquery.min.js"></script>
         <script>
             $(document).ready(function() {
-                $("div").children().css({
+                $("div").find("span").css({
                     "color": "red",
                     "border": "2px solid red"
                 });
@@ -22,7 +22,7 @@
     </head>
     <body>
 
-        <div class="descendants" style="width:500px">div (current element)
+        <div class="descendants" style="width:500px"> div (current element)
             <p> p (child)
                 <span>span (grandchild)</span>
             </p>
