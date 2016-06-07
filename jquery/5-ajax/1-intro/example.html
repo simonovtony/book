@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="../../jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("button").click(function() {
+                    var url = 'http://localhost/book/jquery/5-ajax/1-intro/demo_test.txt';
+                    $("#div1").load("demo_test.txt");
+                });
+            });
+        </script>
+    </head>
+    <body>
+
+        <div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
+
+        <button>Get External Content</button>
+
+    </body>
+</html>
