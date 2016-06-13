@@ -2,10 +2,22 @@
 <html>
     <head>
         <style>
-
+            #grid1 {
+                height: 200px;
+                background: red;
+                background: -webkit-linear-gradient(red, yellow);
+                background: -o-linear-gradient(red, yellow);
+                background: -moz-linear-gradient(red, yellow);
+                background: linear-gradient(red, yellow);
+            }
         </style>
     </head>
     <body>
-        
+        <h3>Linear Gradient - Top to Bottom</h3>
+        <p>This linear gradient starts at the top. It starts red, transitioning to yellow:</p>
+
+        <div id="grid1"></div>
+
+        <p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support gradients.</p>
     </body>
 </html>
