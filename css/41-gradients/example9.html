@@ -2,10 +2,23 @@
 <html>
     <head>
         <style>
-
+            #grad1 {
+                height: 150px;
+                width: 200px;
+                background: red;
+                background: -webkit-radial-gradient(red, yellow, green);
+                background: -moz-radial-gradient(red, yellow, green);
+                background: -o-radial-gradient(red, yellow, green);
+                background: radial-gradient(red, yellow, green);
+            }
         </style>
     </head>
     <body>
-        
+
+        <h3>Radieal Gradient - Evenly Spaced Color Stops</h3>
+        <div id="grad1"></div>
+
+        <p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support gradients.</p>
+
     </body>
 </html>
