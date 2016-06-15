@@ -2,12 +2,35 @@
 <html>
     <head>
         <style>
-
+            div {
+                width: 100px;
+                height: 100px;
+                background: red;
+                
+                -webkit-animation-name: example;
+                -webkit-animation-duration: 4s;
+                
+                animation-name: example;
+                animation-duration: 4s;
+            }
+            
+            @keyframes example {
+                from {
+                    background-color: red;
+                }
+                to {
+                    background-color: yellow;
+                }
+            }
         </style>
     </head>
     <body>
 
-
+        <p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+        
+        <div></div>
+        
+        <p><b>Note:</b> When an animation is finished, it changes back to its orginal style.</p>
 
     </body>
 </html>
