@@ -10,23 +10,23 @@
             }
             
             div#myDiv {
-                -ms-transform: skewX(20deg);
-                -webkit-transform: skewX(20deg);
+                -ms-transform: skew(20deg, 10deg);
+                -webkit-transform: skew(20deg, 10deg);
                 
-                transform: skewX(20deg);
+                transform: skew(20deg, 10deg);
             }
         </style>
     </head>
     <body>
 
-        <p>The skewX() method skews an element along the X-axis by the given angle.</p>
+        <p>The skew() method skews an element into a given angle.</p>
         
         <div>
             This is a normal div element.
         </div>
         
         <div id="myDiv">
-            This div element is skewed 20 degrees along the X-axis.
+            This div element is skewed 20degrees along X-axis, and 10 degrees along the Y-axis.
         </div>
 
     </body>
