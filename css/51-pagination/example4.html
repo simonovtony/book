@@ -4,8 +4,8 @@
         <style>
             ul.pagination {
                 display: inline-block;
-                padding: 0px;
-                margin: 0px;
+                padding: 0;
+                margin: 0;
             }
             
             ul.pagination li {
@@ -17,22 +17,33 @@
                 float: left;
                 padding: 8px 16px;
                 text-decoration: none;
+                transition: background-color .3s;
+            }
+            
+            ul.pagination li a.active {
+                background-color: #4CAF50;
+                color: white;
+            }
+            
+            ul.pagination li a:hover:not(.active) {
+                background-color: #ddd;
             }
         </style>
     </head>
     <body>
 
-        <h2>Simple Pagination</h2>
+        <h2>Transition Effect on Hover</h2>
+        <p>Move the mouse over the numbers.</p>
         <ul class="pagination">
             <li><a href="#">&lt;&lt;</a></li>
             <li><a href="#">1</a></li>
-            <li><a href="active">2</a></li>
+            <li><a class="active" href="#">2</a></li>
             <li><a href="#">3</a></li>
             <li><a href="#">4</a></li>
             <li><a href="#">5</a></li>
             <li><a href="#">6</a></li>
             <li><a href="#">7</a></li>
-            <li><a href="#">&gt;&gt;</a>
+            <li><a href="#">&gt;&gt;</a></li>
         </ul>
 
     </body>
