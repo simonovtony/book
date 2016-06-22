@@ -5,15 +5,19 @@
             .flex-container {
                 display: -webkit-flex;
                 display: flex;
-                width: 400px;
+                
+                -webkit-flex-wrap: wrap-reverse;
+                flex-wrap: wrap-reverse;
+                
+                width: 300px;
                 height: 250px;
                 background-color: lightgray;
             }
             
             .flex-item {
                 background-color: cornflowerblue;
-                width: 100px;
                 height: 100px;
+                width: 100px;
                 margin: 10px;
             }
         </style>
