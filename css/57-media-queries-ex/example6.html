@@ -2,30 +2,39 @@
 <html>
     <head>
         <style>
-            ul {
+            #nav {
                 list-style-type: none;
             }
-            ul li a {
+            
+            #nav li a {
                 color: green;
                 text-decoration: none;
                 padding: 3px;
                 display: block;
             }
+            
+            #nav {
+                width: 35%;
+                float: left;
+            }
+            
             @media screen and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
-                ul li a {
+                #nav li a {
                     padding-left: 30px;
-                    background: url("email-icon.png") left center no-repeat;
+                    background: url(email-icon.png) left center no-repeat;
                 }
-            } 
+            }
+            
             @media screen and (max-width: 1000px) and (min-width: 700px) {
-                ul li a:before {
+                #nav li a:before {
                     content: "Email: ";
                     font-style: italic;
                     color: #666666;
                 }
             }
+            
             @media screen and (min-width: 1001px) {
-                ul li a:after {
+                #nav li a:after {
                     content: " (" attr(data-email) ")";
                     font-size: 12px;
                     font-style: italic;
@@ -38,11 +47,20 @@
 
         <h1>Resize the browser window to see the effect!</h1>
         
-        <ul>
+        <ul id="nav">
             <li><a data-email="johndoe@example.com" href="mailto:johndoe@example.com">John Doe</a></li>
             <li><a data-email="marymoe@example.com" href="mailto:marymoe@example.com">Mary Moe</a></li>
             <li><a data-email="amandapanda@example.com" href="mailto:amandapanda@example.com">Amanda Panda</a></li>
         </ul>
+        
+        <div id="main">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
 
     </body>
 </html>
