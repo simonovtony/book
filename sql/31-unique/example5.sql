@@ -1,0 +1,2 @@
+ALTER TABLE Persons
+DROP INDEX uc_PersonID;

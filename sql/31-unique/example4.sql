@@ -1,0 +1,2 @@
+ALTER TABLE Persons
+ADD CONSTRAINT uc_PersonID UNIQUE (P_Id, LastName);

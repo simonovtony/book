@@ -1,0 +1,2 @@
+ALTER TABLE Orders
+DROP CONSTRAINT fk_PerOrders;

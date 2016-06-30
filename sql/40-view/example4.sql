@@ -1,0 +1,1 @@
+SELECT * FROM [Products Above Average Price];

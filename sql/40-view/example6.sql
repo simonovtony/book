@@ -1,0 +1,1 @@
+SELECT * FROM [Category Sales For 1997];

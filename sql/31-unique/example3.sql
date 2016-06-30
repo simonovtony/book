@@ -1,0 +1,2 @@
+ALTER TABLE Persons
+ADD UNIQUE (P_Id)

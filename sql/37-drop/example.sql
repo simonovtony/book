@@ -1,0 +1,1 @@
+ALTER TABLE table_name1 DROP INDEX index_name1

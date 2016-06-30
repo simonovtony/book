@@ -1,0 +1,2 @@
+ALTER TABLE Persons
+ADD CONSTRAINT pk_PersonID PRIMARY KEY (P_Id, LastName);

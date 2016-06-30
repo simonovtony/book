@@ -1,0 +1,2 @@
+ALTER TABLE Persons
+DROP CONSTRAINT pk_PersonsID;

@@ -1,0 +1,2 @@
+ALTER TABLE Persons
+ALTER City SET DEFAULT 'Sandnes';

@@ -1,0 +1,2 @@
+ALTER TABLE Persons
+ADD PRIMARY KEY (P_Id);

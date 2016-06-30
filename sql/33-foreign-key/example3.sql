@@ -1,0 +1,2 @@
+ALTER TABLE Orders 
+ADD FOREIGN KEY (P_Id) REFERENCES Persons(P_Id);

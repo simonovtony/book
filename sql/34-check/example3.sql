@@ -1,0 +1,2 @@
+ALTER TABLE Persons
+ADD CHECK (P_Id > 0);
