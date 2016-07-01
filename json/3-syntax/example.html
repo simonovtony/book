@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            /* 
+                *** JSON Values ***
+            
+                "number"  : 0
+                "string"  : "string"
+                "boolean" : false
+                "array"   : [1, 2, 3]
+                "object"  : { "key" : "value" }
+                "null     : null
+            */
+        </script>
+    </head>
+    <body>
+        
+        <p>How to create a JavaScript object array.</p>
+        
+        <p id="demo"></p>
+        
+        <p id="demo2"></p>
+        
+        <p id="demo3"></p>
+        
+        <p id="demo4"></p>
+        
+        <script>
+            var employees = [
+                {
+                    "firstName" : "John",
+                    "lastName" : "Doe"
+                },
+                {
+                    "firstName" : "Anna",
+                    "lastName" : "Smith"
+                },
+                {
+                    "firstName" : "Peter",
+                    "lastName" : "Jones"
+                },
+            ];
+            
+            document.getElementById("demo").innerHTML = 
+                    employees[0].firstName + " " + employees[0].lastName;
+            
+            document.getElementById("demo2").innerHTML = 
+                    employees[0]["firstName"] + " " + employees[0]["lastName"];
+            
+            employees[0].firstName = "Gilbert";
+            document.getElementById("demo3").innerHTML =
+                    employees[0].firstName + " " + employees[0].lastName;
+            
+            employees[0]["firstName"] = "Gilbert";
+            document.getElementById("demo4").innerHTML =
+                    employees[0]["firstName"] + " " + employees[0]["lastName"];
+        </script>
+        
+    </body>
+</html>
