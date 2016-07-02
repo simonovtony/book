@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!-- This is - - a comment -->
+    <symbol>&lt; less than</symbol>
+    <symbol>&gt; greater than</symbol>
+    <symbol>&amp; ampersand</symbol>
+    <symbol>&apos; apostrophe</symbol>
+    <symbol>&quot; quotation mark</symbol>
+</root>

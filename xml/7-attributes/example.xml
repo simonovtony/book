@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <person gender="female"></person>
+    <person gender='female'></person>
+    
+    <gangster name='George "Shotgun" Ziegler'/>
+    <gangster name="George &quot;Shotgun&quot; Ziegler"/>
+    
+    <person gender="female">
+        <firstname>Anna</firstname>
+        <lastname>Smith</lastname>
+    </person>
+    <person>
+        <gender>female</gender>
+        <firstname>Anna</firstname>
+        <lastname>Smith</lastname>
+    </person>
+    
+    <note date="2008-01-10">
+        <to>Tove</to>
+        <from>Jani</from>
+    </note>
+    <note>
+        <date>2008-01-10</date>
+        <to>Tove</to>
+        <from>Jani</from>
+    </note>
+    <!-- THE BEST -->
+    <note>
+        <date>
+            <year>2008</year>
+            <month>01</month>
+            <day>10</day>
+        </date>
+        <to>Tove</to>
+        <from>Jani</from>
+    </note>
+    
+    <note day="10" month="01" year="2008"
+        to="Tove" from="Jani" heading="Reminder"
+        body="Don't forget me this weekend!">
+    </note>
+</root>
