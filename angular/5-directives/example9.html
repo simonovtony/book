@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="../angular.min.js"></script>
+    </head>
+    <body ng-app="myApp">
+
+        <w3-test-directive></w3-test-directive>
+        
+        <div w3-test-directive=""></div>
+        
+        <script>
+            
+            var app = angular.module("myApp", []);
+            app.directive("w3TestDirective", function() {
+                return {
+                    restrict : "A",
+                    template : "<h1>Made by a directive!</h1>"
+                };
+            });
+            
+        </script>
+        
+        <!--
+        E for Element name
+        A for Attribute
+        C for Class
+        M for Comment
+        EA is default
+        -->
+
+    </body>
+</html>
