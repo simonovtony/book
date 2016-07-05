@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style>
+            table, th, td {
+                border: 1px solid grey;
+                border-collapse: collapse;
+                padding: 5px;
+            }
+            table tr:nth-child(odd) {
+                background-color: #f1f1f1;
+            }
+            table tr:nth-child(even) {
+                background-color: #ffffff;
+            }
+        </style>
         <script src="../angular.min.js"></script>
     </head>
     <body>
@@ -17,13 +30,15 @@
         </div>
         
         <script>
+            
             var app = angular.module('myApp', []);
             
             app.controller('customersCtrl', function($scope, $http) {
-                $http.get('customers.php').then(function(response) {
+                $http.get('customers.php').then(function (response) {
                     $scope.names = response.data.records;
                 });
             });
+            
         </script>
 
     </body>
