@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="../angular.min.js"></script>
+        <style>
+            input.ng-invalid {
+                background-color: pink;
+            }
+            input.ng-valid {
+                background-color: lightgreen;
+            }
+        </style>
+    </head>
+    <body ng-app="">
+
+        <p>Try writing in the input field:</p>
+        
+        <form name="myForm">
+            <input name="myName" ng-model="myName" required>
+        </form>
+        
+        <p>The input field requires content, and will therebefore become green when you write in it.</p>
+
+    </body>
+</html>
