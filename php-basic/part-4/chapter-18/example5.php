@@ -6,4 +6,6 @@ echo $path, "<br>";
 $path = "c:\non\existent\file";
 echo $path, "<br>";
 
+echo DIRECTORY_SEPARATOR, "<br>";
+
 ?>
