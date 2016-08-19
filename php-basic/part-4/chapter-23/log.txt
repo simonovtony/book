@@ -1,0 +1,2 @@
+[19-Aug-2016 10:10:41 Europe/Berlin] PHP Warning:  filemtime(): stat failed for spoon in C:\xampp\htdocs\book\php-basic\part-4\chapter-23\example7.php on line 8
+[19-Aug-2016 10:10:41 Europe/Berlin] PHP Warning:  filemtime(): stat failed for spoon in C:\xampp\htdocs\book\php-basic\part-4\chapter-23\example7.php on line 8

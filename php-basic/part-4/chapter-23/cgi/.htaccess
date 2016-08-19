@@ -1,0 +1,2 @@
+AddHandler application/x-httpd-php5 php
+Action application/x-httpd-php5 c:/xampp/htdocs/book/php-basic/part-4/chapter-23/cgi/php5.bat
