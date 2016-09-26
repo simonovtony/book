@@ -1,0 +1,30 @@
+[2016-09-26_03:31:39test0]### __construct() called!
+[2016-09-26_03:31:39test0]Hello!
+[2016-09-26_03:31:39test0]### __destruct() called!
+[2016-09-26_03:31:39test1]### __construct() called!
+[2016-09-26_03:31:39test1]Hello!
+[2016-09-26_03:31:39test1]### __destruct() called!
+[2016-09-26_03:31:39test2]### __construct() called!
+[2016-09-26_03:31:39test2]Hello!
+[2016-09-26_03:31:39test2]### __destruct() called!
+[2016-09-26_03:31:39test3]### __construct() called!
+[2016-09-26_03:31:39test3]Hello!
+[2016-09-26_03:31:39test3]### __destruct() called!
+[2016-09-26_03:31:39test4]### __construct() called!
+[2016-09-26_03:31:39test4]Hello!
+[2016-09-26_03:31:39test4]### __destruct() called!
+[2016-09-26_03:31:39test5]### __construct() called!
+[2016-09-26_03:31:39test5]Hello!
+[2016-09-26_03:31:39test5]### __destruct() called!
+[2016-09-26_03:31:39test6]### __construct() called!
+[2016-09-26_03:31:39test6]Hello!
+[2016-09-26_03:31:39test6]### __destruct() called!
+[2016-09-26_03:31:39test7]### __construct() called!
+[2016-09-26_03:31:39test7]Hello!
+[2016-09-26_03:31:39test7]### __destruct() called!
+[2016-09-26_03:31:39test8]### __construct() called!
+[2016-09-26_03:31:39test8]Hello!
+[2016-09-26_03:31:39test8]### __destruct() called!
+[2016-09-26_03:31:39test9]### __construct() called!
+[2016-09-26_03:31:39test9]Hello!
+[2016-09-26_03:31:39test9]### __destruct() called!
