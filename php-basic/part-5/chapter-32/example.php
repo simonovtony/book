@@ -55,4 +55,11 @@ echo "<pre>";
 print_r($a);
 echo "</pre>";
 
+echo "<hr>";
+
+class Station { public $exit; }
+$theMobilAve = new Station;
+$theMobilAve->exit = $theMobilAve;
+unset($theMobilAve);
+
 ?>
