@@ -6,11 +6,11 @@ final class Base {
     }
 }
 
+// Ошибка
 /*
- * Ошибка
- */
 class Derive extends Base {
 
 }
+*/
 
 ?>
