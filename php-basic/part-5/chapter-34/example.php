@@ -1,5 +1,34 @@
 <?php
 
+echo "Начало программы.<br>";
+try {
+    eatThis();
+} catch (Exception $e) {
+    echo "Неперехваченное исключение: ", $e, "<br>";
+} finally {
+    echo "Конец программы.<br>";
+}
+
+echo "<hr>";
+
+function eatThis() {
+    throw new Exception("bang-bang!");
+}
+
+function hello() {
+    echo "Всё что имеет начало, ";
+    try {
+        eatThis();
+    } finally {
+        echo "имеет и конец.";
+    }
+    echo "this never prints!";
+}
+
+hello();
+
+echo "<hr>";
+
 function error_handler($errno, $msg, $file, $line) {
     throw new Exception("\nError ID: $errno, Message: $msg, File: $file, Line: $line\n");
 }
