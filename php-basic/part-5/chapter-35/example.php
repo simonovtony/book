@@ -133,4 +133,13 @@ try {
     echo "Исключение: ", $e->getMessage();
 }
 
+echo "<hr>";
+
+try {
+    $obj = new ReflectionClass('Reflection');
+    Dump::make($obj, Dump::VAR_ECHO);
+} catch (ReflectionException $e) {
+    echo "Исключение: ", $e->getMessage();
+}
+
 ?>

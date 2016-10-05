@@ -9,3 +9,17 @@
     1) Функция: ReflectionFunction
     2) Параметр функции: ReflectionParameter
     3) Класс: ReflectionClass
+        1) Наследование и отражения
+    4) Свойство класса: ReflectionProperty
+    5) Метод класса: ReflectionMethod
+    6) Библиотека расширений: ReflectionExtension
+    7) Различные утилиты: Reflection
+    8) Исключение: ReflectionException
+    9) Иерархия
+3) Итераторы
+    1) Стандартное поведение foreach
+    2) Определение собственного итератора
+    3) Как PHP обрабатывает итераторы
+    4) Множественные итераторы
+4) Виртуальные массивы
+5) Библиотека SPL
