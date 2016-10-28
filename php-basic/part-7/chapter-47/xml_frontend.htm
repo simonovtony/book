@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>xml_frontend</title>
+        <script>
+            function doShowTime() {
+                var req = null;
+                if(window.XMLHttpRequest) {
+                    req = new XMLHttpRequest();
+                } else if(window.ActiveXObject) {
+                    try {
+                        req = new ActiveXObject("Msxml2.XMLHTTP");
+                    } catch(e) {
+                        try {
+                            req = new ActiveXObject("Microsoft.XMLHTTP");
+                        } catch(e) {
+
+                        }
+                    }
+                }
+                if(!req) {
+                    alert("XMLHttpRequest не поддерживается в этом браузере!");
+                    return;
+                }
+                req.onreadystatechange = function() {
+                    if(req.readyState == 4 /* && req.status == 200 */) {
+                            /* Для json
+                            var timeText = req.responseText;
+                            eval("timeText = " + timeText);
+
+                            var timeText = req.ResponseText;
+                            timeText = JSON.parse(timeText);
+                            */
+                            var timeNode = req.responseXML.getElementsByTagName('time')[0];
+                            alert(timeNode.childNodes[0].nodeValue);
+                    }
+                }
+                req.open("POST", 'xml_backend.php', true);
+                //ajax.setRequestHeader('Content-Type', "application/x-www-form-urlencoded");
+                req.send('number=101&room=303');
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="Показать время на сервере" onclick="doShowTime()">
+    </body>
+</html>
