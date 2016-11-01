@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>suggest_frontend</title>
+        <script src="JsHttpRequest/JsHttpRequest.js"></script>
+        <script language="javascript">
+            function fillList(st) {
+                JsHttpRequest.query(
+                    'suggest_backend.php',
+                    {
+                        'str' : st,
+                        'num' : 10,
+                    },
+                    function (result, errors) {
+                        document.getElementById("debug").innerHTML = errors;
+                        var list = document.getElementById("list");
+                        list.length = 0;
+                        for(var i = 0; i < result.list.length; i++) {
+                            list[i] = new Option(result.list[i]);
+                        }
+                    },
+                    false
+                );
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            Введите первые буквы английского слова:<br>
+            <div style="width: 400px">
+                <input type="text" name="text" style="width: 100%;" onkeyup="fillList(this.value)">
+                <select id="list" size="8" style="width: 100%;" onclick="this.form.text.value = this.value"></select>
+            </div>
+        </form>
+
+        <div id="debug" style="border: 1px dashed red; padding: 2px">
+            Debug info
+        </div>
+    </body>
+</html>

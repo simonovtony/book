@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>onclick_closure</title>
+    </head>
+    <body>
+        <form method="post" action="delete?id=303">
+            <input type="submit" value="Удалить" id="del">
+        </form>
+
+        <script>
+            document.getElementById('del').onclick = function() {
+                if(confirm('Дествительно удалить?')) {
+                    if(confirm('Последнее предупреждение! Удалить?')) {
+                        return true;
+                    }
+                }
+                return false;
+            }
+        </script>
+    </body>
+</html>
