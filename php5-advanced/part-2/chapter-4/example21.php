@@ -7,10 +7,16 @@ class Conf {
 
     function __construct($file) {
         $this->file = $file;
+        if(!file_exists($file)) {
+            throw new Exception("Файл '$file' не найден'");
+        }
         $this->xml = simplexml_load_file($file);
     }
 
     function write() {
+        if(!is_writable($this->file)) {
+            throw new Exception("Файл '{$this->file}' недоступен для записи.");
+        }
         file_put_contents($this->file, $this->xml->asXML());
     }
 
@@ -35,10 +41,15 @@ class Conf {
 
 header("Content-Type: text/plain");
 
-$conf = new Conf("conf01.xml");
-$conf->set("user", "bob");
-$conf->set("pass", "newpass");
-$conf->set("host", "localhost");
-$conf->write();
+try {
+    $conf = new Conf(dirname(__FILE__) . "/conf01.xml");
+    print "user: " . $conf->get('user') . "\n";
+    print "host: " . $conf->get('host') . "\n";
+    $conf->set("pass", "newpass");
+    $conf->write();
+} catch (Exception $e) {
+    //die($e->__toString());
+    die($e);
+}
 
 ?>
